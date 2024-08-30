@@ -6,7 +6,9 @@
   "type": "commonjs",
   "scripts": {
     "dev": "nodemon api/index.js",
-    "start": "node api/index.js"
+    "start": "node api/index.js",
+    "test": "node test/test.js",
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "",
@@ -35,6 +37,13 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
-    "@types/morgan": "^1.9.9"
+    "@commitlint/cli": "^19.4.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@eslint/js": "^9.9.1",
+    "@types/morgan": "^1.9.9",
+    "globals": "^15.9.0",
+    "husky": "^9.1.5",
+    "lint-staged": "^15.2.9",
+    "prettier": "^3.3.3"
   }
 }
